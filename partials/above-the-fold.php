@@ -8,7 +8,7 @@
                     <?php echo $yp; ?>
                 </h1>   
                 <?php // if(function_exists('like_counter_p')) { like_counter_p('text for like'); } ?>
-                <span class='btn btn-yp' onclick="wp_ypnt_ajax_script(this,'<?php echo $post->ID; ?>','like')">YES PLEASE</span>
+                <span class='btn btn-yp' onclick="wp_ypnt_ajax_script(this,'<?php echo $post->ID; ?>','like')">Yes Please</span>
 
             </div>
             <div class="ypnt-holder col-md-6">
@@ -17,7 +17,7 @@
                     <?php echo $nt; ?>
                 </h1>   
                 <?php //if(function_exists('dislike_counter_p')) { dislike_counter_p('text for un-like'); } ?>
-                <span class='btn btn-nt' onclick="wp_ypnt_ajax_script(this,'<?php echo $post->ID; ?>','dislike')">NO THANKS</span>
+                <span class='btn btn-nt' onclick="wp_ypnt_ajax_script(this,'<?php echo $post->ID; ?>','dislike')">No Thanks</span>
             </div>
         </div>
     </div>

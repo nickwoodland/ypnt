@@ -177,7 +177,32 @@ body {
 	color: #eeefe9;
 }
 
+.above-the-fold__wrapper {
+	background:url('assets/bg-texture.jpg');	
+	background-size: 100% 100%;
+	margin-bottom:3em;
+}
 
+
+.navbar {
+	background-color:rgba(0,0,0, 0.16);
+}
+
+/***BUTTONS**/
+
+.btn {
+	background-color: #4a2640;
+	border-radius:6px;
+	font-size:1.3em;
+}
+
+.btn-yp {
+	background-color: #f3ab20;
+}
+
+.btn-nt {
+	background-color: #944ca0;
+}
 
 /**************************/
 /********* PAGES **********/
@@ -189,5 +214,16 @@ body {
 
 .ypnt-holder{
 	text-align:center;
+
 }
 
+.counter-wrapper {
+	padding:2.3em;
+	margin-top:5em;
+	margin-bottom:5em;
+	background-color:rgba(0,0,0, 0.16);
+}
+
+.counter-wrapper .row {
+
+}
