@@ -85,14 +85,12 @@
 		</div> <!---atf wrapper -->
 	<?php endif; ?>
 	
+
+<?php if (!is_front_page()) : ?>
 	<div class="main-content">
 		<div class="container">
 			<div class="row">
-				<?php if (is_front_page()) : ?>
-					<?php $columns = "col-sm-12 col-md-12"; ?>
-				<?php else : ?>
-					<?php $columns = "col-sm-12 col-md-8"; ?>
-				<?php endif; ?>
 
-				<div id="content" class="main-content-inner <?php echo $columns; ?>">
+				<div id="content" class="main-content-inner col-sm-12 col-md-8">
+<?php endif;?>
 

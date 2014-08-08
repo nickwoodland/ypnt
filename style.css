@@ -178,7 +178,7 @@ body {
 }
 
 .above-the-fold__wrapper {
-	background:url('assets/bg-texture.jpg');	
+	background:url('assets/bg-texture2.jpg');	
 	background-size: 100% 100%;
 	margin-bottom:3em;
 }
@@ -191,17 +191,30 @@ body {
 /***BUTTONS**/
 
 .btn {
-	background-color: #4a2640;
-	border-radius:6px;
+	/*background-color: #4a2640;*/
+	border-radius:2px;
+	border: solid 1px #eeefe9;
+
 	font-size:1.3em;
+	font-weight:200;
+	letter-spacing:2px;
+
+	padding:10px 14px;
 }
 
-.btn-yp {
+.btn-yp:hover{
 	background-color: #f3ab20;
+	color: #eeefe9;
+
 }
 
-.btn-nt {
-	background-color: #944ca0;
+.btn-nt:hover{
+	background-color: #4a2640;
+	color: #eeefe9;
+}
+
+.site-title a {
+	color: #eeefe9;
 }
 
 /**************************/
@@ -226,4 +239,10 @@ body {
 
 .counter-wrapper .row {
 
+}
+
+.cta {
+	background-color: #4a2640;
+	padding:2.3em;
+	margin-bottom:2.3em;
 }
