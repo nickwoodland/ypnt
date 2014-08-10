@@ -20,14 +20,29 @@ get_header(); ?>
 	<?php endwhile; // end of the loop. ?>
 
 </div>
-<div class="cta">
+<div class="cta cta--nt">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<h2>Shooo be do wop this is a CTA</h2>
+				<h2>Donate to the Initiative ></h2>
 			</div>
 			<div class="col-md-6 center">
-				<span class='btn btn-yp'>Yes Please</span>
+				<span class='btn btn-yp pull-right'>Yes Please</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="cta cta--yp">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6 center">
+				<span class='btn btn-nt '>Yes Please</span>
+			</div>
+
+			<div class="col-md-6">
+				<h2 class="pull-right">Shooo be do wop this is a CTA</h2>
 			</div>
 		</div>
 	</div>
