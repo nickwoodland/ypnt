@@ -6,33 +6,26 @@ function cmb_homepage_metaboxes( array $meta_boxes ) {
 
     $fields =   array(
 
-                array( 
-                    'name' => 'Explanation Content',
-                    'id' => $prefix . 'explanation',
-                    'type' => 'wysiwyg',
-                    'cols' => 12,
-                ),
+                    array( 
+                        'name' => 'NT Content',
+                        'id' => $prefix . 'nt',
+                        'type' => 'wysiwyg',
+                        'cols' => 6,
+                    ),
 
-                array( 
-                    'name' => 'NT Content',
-                    'id' => $prefix . 'nt',
-                    'type' => 'wysiwyg',
-                    'cols' => 6,
-                ),
+                    array( 
+                        'name' => 'YP Content',
+                        'id' => $prefix . 'yp',
+                        'type' => 'wysiwyg',
+                        'cols' => 6,
+                    ),
 
-                array( 
-                    'name' => 'YP Content',
-                    'id' => $prefix . 'yp',
-                    'type' => 'wysiwyg',
-                    'cols' => 6,
-                ),
-
-                array( 
-                    'name' => 'Goal Content',
-                    'id' => $prefix . 'goal',
-                    'type' => 'wysiwyg',
-                    'cols' => 12,
-                ),
+                    array( 
+                        'name' => 'Goal Content',
+                        'id' => $prefix . 'goal',
+                        'type' => 'wysiwyg',
+                        'cols' => 12,
+                    ),
 
             );
 

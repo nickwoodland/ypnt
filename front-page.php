@@ -12,6 +12,12 @@
 
 get_header(); ?>
 
+<?php $custom_meta = get_post_meta($post->ID); ?>
+
+<?php $nt = isset($custom_meta['fp_nt']) ? $custom_meta['fp_nt'] : false; ?>
+<?php $yp = isset($custom_meta['fp_yp']) ? $custom_meta['fp_yp'] : false; ?>
+<?php $goal = isset($custom_meta['fp_goal']) ? $custom_meta['fp_goal'] : false; ?>
+		
 <div class="container">
 	<?php while ( have_posts() ) : the_post(); ?>
 
@@ -32,6 +38,20 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<?php if(false != $nt) : ?>
+				<?php echo $nt[0]; ?>
+			<?php endif; ?>
+		</div>
+		<div class="col-md-6 center">
+			<?php if(false != $yp) : ?>
+				<?php echo $yp[0]; ?>
+			<?php endif; ?>
+		</div>
+	</div>
+</div>
 
 <div class="cta cta--yp">
 	<div class="container">
@@ -46,6 +66,11 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+</div>
+<div class="container">
+	<?php if(false != $goal) : ?>
+		<?php echo $goal[0]; ?>
+	<?php endif; ?>
 </div>
 
 <?php get_footer(); ?>
