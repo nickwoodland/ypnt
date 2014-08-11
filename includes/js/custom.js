@@ -12,3 +12,20 @@ jQuery( document ).ready( function( $ ) {
         // Force banner height to be height of window minus height of site banner "header"
         hero_banner.css('height', target_height);
 } );
+
+jQuery(document).ready(function( $ ){
+    $('body').on("click", ".js-smooth-scroll", function(e) {
+        e.preventDefault();
+
+        var target = $( $(this).attr('href') );
+
+        var fudgeFactor = $(this).data('scroll-fudge-factor') || 0;
+
+        jQuery('html, body').stop().animate({
+            scrollTop: target.offset().top + fudgeFactor,
+            easing: "swing",
+            queue: false
+        }, 2000);
+        
+    });
+});

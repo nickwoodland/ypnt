@@ -27,3 +27,4 @@
 
     </div>
 </div>
+<a class='btn btn-yp js-smooth-scroll' href="#colophon">Find Out More</a>
