@@ -19,11 +19,14 @@ get_header(); ?>
 <?php $goal = isset($custom_meta['fp_goal']) ? $custom_meta['fp_goal'] : false; ?>
 		
 <div class="container">
-	<?php while ( have_posts() ) : the_post(); ?>
+	<div class="feature">
+		<h2>Help Change The World Into Something (More) Beautiful...</h2>
+		<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php the_content(); ?>
+			<?php the_content(); ?>
 
-	<?php endwhile; // end of the loop. ?>
+		<?php endwhile; // end of the loop. ?>
+	</div>
 
 </div>
 <div class="cta cta--nt">
@@ -38,39 +41,53 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+
+<div class="container">
+	<div class="feature">
+
+		<?php if(false != $goal) : ?>
+			<h2> Our Goal </h2>
+			<?php echo $goal[0]; ?>
+		<?php endif; ?>
+
+	</div>
+</div>
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-6">
 			<?php if(false != $nt) : ?>
+				<h2>No Thanks</h2>
 				<?php echo $nt[0]; ?>
 			<?php endif; ?>
 		</div>
 		<div class="col-md-6 center">
 			<?php if(false != $yp) : ?>
+				<h2>Yes Please</h2>
 				<?php echo $yp[0]; ?>
 			<?php endif; ?>
 		</div>
 	</div>
 </div>
 
-<div class="cta cta--yp">
-	<div class="container">
-		<div class="row">
 
-			<div class="col-md-6 center">
-				<span class='btn btn-nt '>Yes Please</span>
-			</div>
 
-			<div class="col-md-6">
-				<h2 class="pull-right">Shooo be do wop this is a CTA</h2>
-			</div>
-		</div>
+<div class="row">
+
+	<div class="col-md-6 center cta cta--yp">
+
+		<span class='btn btn-nt '>Yes Please</span>
+
+	</div>
+
+	<div class="col-md-6 cta cta--nt">
+
+			<h2 class="pull-right">Shooo be do wop this is a CTA</h2>
+
 	</div>
 </div>
-<div class="container">
-	<?php if(false != $goal) : ?>
-		<?php echo $goal[0]; ?>
-	<?php endif; ?>
-</div>
+
+
+
 
 <?php get_footer(); ?>
