@@ -31,4 +31,4 @@
 
     </div>
 </div>
-<a class="hero-more js-smooth-scroll" href="#colophon"><span>Find Out More</span></a>
+<a class="hero-more js-smooth-scroll" href="#intro"><span>Find Out More</span></a>
