@@ -139,8 +139,19 @@ function wp_ypnt_ajax_script() {
    		url: "<?php echo get_stylesheet_directory_uri(). '/includes/ajax_counter.php' ?>",
    		data: "post_id="+post_id+"&up_type="+ul_type,
    		success: function(msg){
-   			var counter = jQuery(obj).parent().find("h1");
-   			counter.html(msg);
+   			if(ul_type == 'dislike') {
+   				var counter = jQuery('.inf-1').find("h1");
+   			} else {
+   				var counter = jQuery('.inf-2').find("h1");
+   			}
+   			counter.addClass('counter-updated')
+   			.delay(400)
+   			.queue(function() {
+   					jQuery(this).html(msg);
+   					jQuery(this).removeClass('counter-updated');
+   					jQuery(this).dequeue();
+   				});
+   			//counter.html(msg);
      		//jQuery(obj).find("span").html(msg);
 			isProcessing = false; 
    			}

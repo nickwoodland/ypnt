@@ -5,8 +5,9 @@
  * @package _tk
  */
 ?>
+</div><!-- close .main-content-inner -->
 
-	</div><!-- close .main-content-inner -->
+<?php if(is_home() ) : ?>
 
 	<div class="sidebar col-sm-12 col-md-4">
 
@@ -39,3 +40,4 @@
 			<?php endif; ?>
 
 		</div><!-- close .sidebar-padder -->
+<?php endif; ?>

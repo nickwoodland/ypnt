@@ -11,7 +11,7 @@
                         </h1> 
                     </figure>  
                     <?php //if(function_exists('dislike_counter_p')) { dislike_counter_p('text for un-like'); } ?>
-                    <span class='btn btn-nt' onclick="wp_ypnt_ajax_script(this,'<?php echo $post->ID; ?>','dislike')">No Thanks</span>
+                    
                 </div>
             </div>
             <div class="ypnt-holder counter col-md-6">
@@ -23,12 +23,22 @@
                         </h1>
                     </figure> 
                     <?php // if(function_exists('like_counter_p')) { like_counter_p('text for like'); } ?>
-                    <span class='btn btn-yp' onclick="wp_ypnt_ajax_script(this,'<?php echo $post->ID; ?>','like')">Yes Please</span>
+
                 </div>
             </div>
 
         </div>
 
     </div>
+    <div class="counter-btn-wrapper clearfix">
+        <div class="row">    
+            <div class="col-md-6">
+                <span class='btn btn-nt' onclick="wp_ypnt_ajax_script(this,'<?php echo $post->ID; ?>','dislike')">No Thanks</span>
+            </div>
+             <div class="col-md-6">
+                <span class='btn btn-yp' onclick="wp_ypnt_ajax_script(this,'<?php echo $post->ID; ?>','like')">Yes Please</span>
+            </div>
+        </div>
+    </div>
 </div>
-<a class="hero-more js-smooth-scroll" href="#intro"><span>Find Out More</span></a>
+<a class="hero-more js-smooth-scroll" href="#intro"><span>FIND OUT MORE</span></a>

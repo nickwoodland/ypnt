@@ -173,9 +173,14 @@ object {
 /**************************/
 
 body {
-	background-color:#292526;
+	background-color:#1F1F1F;
 	color: #eeefe9;
 	font-family: 'Open Sans', sans-serif;
+	font-weight:100;
+}
+
+.nav a{
+	color:#eeefe9;
 }
 
 .above-the-fold__wrapper {
@@ -190,12 +195,12 @@ body {
 }
 
 .site-header{
-	background-color: #292526;
+	background-color: #1F1F1F;
 }
 
 .site-footer {
 	padding-top:3.3em;
-	background-color:#312E2F;
+	background-color:#222222;
 }
 
 .feature{
@@ -203,7 +208,7 @@ body {
 	padding:2.3em;
 	margin-top:2.3em;
 	margin-bottom:2.3em;
-	background-color:#312E2F;
+	background-color:#222222;
 }
 
 .feature h2{
@@ -215,32 +220,90 @@ body {
 
 }
 
+.feature-cta{
+	margin-bottom:0px;
+}
+
+
+.page-banner{
+	padding:3.3em;
+	margin-bottom:1em;
+	background-color:#4a2640;
+}
+
+.page-banner{
+	background:url('assets/header/yp.jpg');	
+	background-size:contain; 
+	background-repeat: no-repeat;
+}
 /***BUTTONS**/
 
 .btn {
 	/*background-color: #4a2640;*/
 	border-radius:8px;
 	border: solid 1px #eeefe9;
-	transition: all 0.3s;
+	transition: all 0.2s;
 
 	font-size:1.5em;
 	font-weight:300;
 	letter-spacing:1px;
 /*	text-transform: uppercase; */
 
-	padding:10px 14px;
+	padding:12px 16px;
 }
 
-.btn-yp:hover{
+
+
+.counter-btn-wrapper .btn {
+	border:none;
+	background-size: 200% 200%;
+	width:100%;
+
+}
+
+
+
+.counter-btn-wrapper .btn-yp {
+	/*background-color:#E69E13;*/
+	background-image: linear-gradient(to bottom, #E69E13 50%, #f3ab20 50%);
+	
+}
+
+
+.counter-btn-wrapper .btn-nt {
+	/*background-color:#4a2640;*/
+	background-image: linear-gradient(to bottom, #4a2640 50%, #57334D 50%);
+}
+
+.counter-btn-wrapper .btn:hover {
+	border:none;
+	background-position: 0% -94%;
+	color:#1F1F1F;
+}
+
+
+.counter-btn-wrapper .btn-yp:hover{
+	/*color:#eeefe9;*/
+	background-color:#f3ab20; 
+}
+
+.counter-btn-wrapper .btn-nt:hover{
+	/*color:#eeefe9;*/
+	background-color:#57334D;
+}
+
+
+
+.cta--yp .btn:hover{
 	background-color: #f3ab20;
-	border: solid 1px #f3ab20;
-	color: #eeefe9;
+	border: solid 1px #f3ab20;	
+	color:#eeefe9;
 }
 
-.btn-nt:hover{
-	background-color: #4a2640;
-	border: solid 1px #4a2640;	
-	color: #eeefe9;
+.cta--nt .btn:hover{
+	background-color: #57334D;
+	border: solid 1px #57334D;
+	color: #eeefe9;	
 }
 
 
@@ -254,6 +317,8 @@ body {
 	text-decoration:none;
 }
 
+
+
 /**************************/
 /********* PAGES **********/
 /**************************/
@@ -262,7 +327,6 @@ body {
 
 /** FRONT PAGE **/
 
-
 /**** COUNTER HOLDER ***/
 .ypnt-holder{
 	text-align:center;
@@ -270,8 +334,8 @@ body {
 }
 
 .ypnt-holder.counter {
-	padding-top:3.3em;
-	padding-bottom:3.3em;
+	padding-top:5%;
+	padding-bottom:5%;
 	padding-left:0px;
 	padding-right:0px;
 }
@@ -279,25 +343,40 @@ body {
 .counter-wrapper {
 	/*padding:2.3em;*/
 	margin-top:14%;
-	background-color:rgba(41, 37, 38, 0.6);
-	border-radius:8px;
-	padding-left: 20%;
-	padding-right: 20%;
+	background-color:rgba(41, 37, 38, 0.7);
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	padding-left:5%;
+	padding-right:5%;
+	margin-left:15%;
+	margin-right:15%;
+}
+
+.counter-btn-wrapper {
+	margin-left:15%;
+	margin-right:15%;
+	padding-left:5%;
+	padding-right:5%;
+	background-color: #1F1F1F;
+	padding:1.5em;
+	text-align:center;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
 }
 
 .inf{
 	width:100%;
-	margin-bottom:2.3em;
 }
 
 .inf h1{
 	margin:0;
 	font-size:46px;
 	position:absolute;
-	top:36%;
+	top:43%;
 	left:0;
-	bottom:36%;
 	right:0;
+	transition:opacity 0.3s ease-in-out;
+	tansition:color: 0.5s ease-in-out;
 }
 
 .inf:before{
@@ -319,8 +398,19 @@ body {
 
 }
 
-.counter-wrapper .row {
+.counter-updated {
+	-webkit-opacity: 0;
+  	-moz-opacity: 0;
+  	opacity: 0;
+  	
+}
 
+.inf-1 h1.counter-updated{
+	color:#57334D;
+}
+
+.inf-2 h1.counter-updated{
+	color:#f3ab20;
 }
 
 .hero-more {
@@ -330,19 +420,25 @@ body {
 	background-color:rgba(41, 37, 38, 0.6);
 	padding:1.3em;
 	text-decoration:none;
+	transition: all 0.1s ease;
+}
+
+.hero-more span{
+	padding-left:1em;
+	padding-right:1em;  
+	text-decoration: none;
+	color:#eeefe9;
+	transition: letter-spacing 1.0s ease;
 }
 
 .hero-more:hover {
 	text-decoration:none;
+	background-color:#1F1F1F;
 }
 
 
-.hero-more span{
-
-		font-size:1.2em;
-	color:#eeefe9;
-	text-decoration: none;
-	transition: all 0.7s;
+.hero-more:hover span{
+	letter-spacing:5px;
 
 }
 
@@ -375,6 +471,12 @@ body {
 }
 
 .cta--yp{
-	background-color: #f3ab20;
+	background-color: #E69E13;
 }
 
+.cta--half-width{
+	padding:2.3em;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+
+}

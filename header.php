@@ -62,7 +62,7 @@
 						array(
 							'theme_location' => 'primary',
 							'container_class' => 'collapse navbar-collapse navbar-responsive-collapse',
-							'menu_class' => 'nav navbar-nav',
+							'menu_class' => 'nav navbar-nav pull-right',
 							'fallback_cb' => '',
 							'menu_id' => 'main-menu',
 							'walker' => new wp_bootstrap_navwalker()
@@ -77,17 +77,22 @@
 	</header><!-- #masthead -->
 
 
-	<?php if(is_front_page()) : ?>	
+	<?php if(is_front_page() ): ?>	
 		<?php include(locate_template('partials/above-the-fold.php')); ?>
 		</div> <!---atf wrapper -->
+	<?php else : ?>
+		<?php include(locate_template('partials/page-banner.php')); ?>
 	<?php endif; ?>
 	
 
-<?php if (!is_front_page()) : ?>
+<?php if (!is_front_page() || 0) : ?>
 	<div class="main-content">
 		<div class="container">
 			<div class="row">
-
-				<div id="content" class="main-content-inner col-sm-12 col-md-8">
+				<?php if( is_home() ) : ?>
+					<div id="content" class="main-content-inner col-sm-12 md-8">
+				<?php else : ?>
+					<div id="content" class="main-content-inner col-sm-12">
+				<?php endif; ?>
 <?php endif;?>
 

@@ -45,7 +45,7 @@ get_header(); ?>
 <div class="container">
 	<div class="row">
 		<div class="col-md-6">
-			<div class="feature">
+			<div class="feature feature-cta">
 				<?php if(false != $nt) : ?>
 					<h2>No Thanks</h2>
 					<?php echo $nt[0]; ?>
@@ -53,7 +53,7 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="col-md-6 center">
-			<div class="feature">
+			<div class="feature feature-cta">
 				<?php if(false != $yp) : ?>
 					<h2>Yes Please</h2>
 					<?php echo $yp[0]; ?>
@@ -70,18 +70,18 @@ get_header(); ?>
 	<div class="row">
 
 		<div class="col-md-6">
-			<div class="cta cta--yp">
-				<div class="cta-inner">
-					<h2 class="pull-left">Learn More ></h2>
+			<div class="cta cta--nt cta--half-width">
+				<div class="cta-inner clearfix">
+					<h2 class="pull-left">Learn More About ></h2>
 					<span class='btn btn-nt pull-right'>No Thanks</span>
 				</div>
 			</div>
 		</div>
 
 		<div class="col-md-6">
-			<div class="cta cta--nt">
-				<div class="cta-inner">
-					<h2 class="pull-left">Learn More ></h2>
+			<div class="cta cta--yp cta--half-width">
+				<div class="cta-inner clearfix">
+					<h2 class="pull-left">Learn More About ></h2>
 					<span class='btn btn-yp pull-right'>Yes Please</span>
 				</div>
 			</div>
