@@ -8,7 +8,7 @@ jQuery( document ).ready( function( $ ) {
 
         // Force minimum height of the banner
         // Small viewports cause layout to break
-        target_height   = (win_height - banner_height < 400) ? '400' : win_height - (banner_height + button_height);
+        target_height   = (win_height - banner_height < 400) ? '400' : win_height - (banner_height + button_height - 24 );
 
         // Force banner height to be height of window minus height of site banner "header"
         hero_banner.css('height', target_height);

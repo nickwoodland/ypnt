@@ -218,7 +218,6 @@ body {
 
 .nav a:hover::before,
 .nav a:focus::before {
-
 	color: #fff;
 	text-shadow: 10px 0 #fff, -10px 0 #fff;
 }
@@ -274,9 +273,10 @@ body {
 }
 
 .page-banner{
-	background:url('assets/header/yp.jpg');	
-	background-size:contain; 
+	background:url('assets/header/header3.jpg');	
+	background-size:cover; 
 	background-repeat: no-repeat;
+	height:337px;
 }
 /***BUTTONS**/
 
@@ -460,9 +460,9 @@ body {
 	width:100%;
 	text-align:center;
 	background-color:rgba(41, 37, 38, 0.6);
-	padding:2.3em;
+	padding:1.3em;
 	text-decoration:none;
-	transition: background-color 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .hero-more span{
@@ -470,6 +470,7 @@ body {
 	padding-right:1em;  
 	text-decoration: none;
 	color:#eeefe9;
+	transition: all 0.7s ease;
 }
 
 .hero-more:hover {
@@ -478,33 +479,11 @@ body {
 }
 
 
-.hero-more span::before {
-	position: absolute;
-	bottom:1%;
-	left: 50%;
-	color: transparent;
-	content: '•';
-	text-shadow: 0 0 transparent;
-	font-size: 1.2em;
-	-webkit-transition: text-shadow 0.3s, color 0.3s;
-	-moz-transition: text-shadow 0.3s, color 0.3s;
-	transition: text-shadow 0.3s, color 0.3s;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	transform: translateX(-50%);
-	pointer-events: none;
-}
-
-.hero-more:hover span::before,
-.hero-more:hover span::before {
-
-	color: #fff;
-	text-shadow: 10px 0 #fff, -10px 0 #fff;
-}
 
 .hero-more:hover span,
 .hero-more:focus span{
 	text-decoration: none; 
+	letter-spacing:4px;
 	color: #E69E13;
 }
 
