@@ -1,3 +1,4 @@
+<?php $subtitle = get_post_meta($post->ID, '_header_subtitle', true); ?>
 <?php $headerimage = "" ?>
 <?php if (has_post_thumbnail($post->ID)) : ?>
     <?php $thumbnail_id = get_post_thumbnail_id($post->ID); ?>
@@ -7,6 +8,10 @@
 	<div class="container">
 		<header>
 			<h1 class="page-title"><?php the_title(); ?></h1>
+			
+			<?php if("" != $subtitle) : ?>
+				<span> <?php echo $subtitle; ?> </span>
+			<?php endif; ?>
 		</header><!-- .entry-header -->
 	</div>
 </div>
