@@ -272,8 +272,7 @@ body {
 	background-color:#4a2640;
 }
 
-.page-banner{
-	background:url('assets/header/header3.jpg');	
+.page-banner{	
 	background-size:cover; 
 	background-repeat: no-repeat;
 	height:337px;

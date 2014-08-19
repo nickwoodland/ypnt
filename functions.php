@@ -181,6 +181,8 @@ require get_template_directory() . '/includes/extras.php';
 
 require get_template_directory() . '/includes/front-page-meta.php';
 
+require get_template_directory() . '/includes/global-meta.php';
+
 /**
  * Customizer additions.
  */
