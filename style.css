@@ -276,12 +276,31 @@ body {
 	padding:3.3em;
 	margin-bottom:1em;
 	background-color:#4a2640;
-}
-
-.page-banner{	
 	background-size:cover; 
 	background-repeat: no-repeat;
 	height:337px;
+}
+
+
+.page-banner .title-wrapper{
+	display:inline-block;
+	padding:1.3em;
+	background-color:rgba(41, 37, 38, 0.7);
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	margin-bottom:1em;
+}
+
+.page-banner .subtitle-wrapper{
+	display:inline-block;
+	padding:1.3em;
+	background-color:#E69E13;
+
+}
+
+.page-banner .subtitle-wrapper span{
+	font-size:2em;
+
 }
 /***BUTTONS**/
 

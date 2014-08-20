@@ -7,10 +7,14 @@
 <div class="page-banner" style="background:url(<?php echo $headerimage != '' ? $headerimage[0] : get_stylesheet_directory_uri().'/assets/header/default.jpg'; ?>);">
 	<div class="container">
 		<header>
-			<h1 class="page-title"><?php the_title(); ?></h1>
+			<div class="title-wrapper">
+				<h1 class="page-title"><?php the_title(); ?></h1>
+			</div>
 			
 			<?php if("" != $subtitle) : ?>
-				<span> <?php echo $subtitle; ?> </span>
+				<div class="subtitle-wrapper">
+					<span> <?php echo $subtitle; ?> </span>
+				</div>		
 			<?php endif; ?>
 		</header><!-- .entry-header -->
 	</div>
