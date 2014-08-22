@@ -12,6 +12,18 @@ function cmb_header_metaboxes( array $meta_boxes ) {
                         'cols' => 12,
                     ),
 
+                    array( 
+                        'name' => 'Colour?',
+                        'id' => $prefix . 'colour',
+                        'type' => 'radio',
+                        'cols' => 6,
+                        'options' => array( 
+                            'yp' => 'Yes Please', 
+                            'nt' => 'No Thanks'
+                        ),
+                    ),
+
+
             );
 
 

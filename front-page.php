@@ -68,12 +68,14 @@ get_header(); ?>
 
 <div class="container">
 	<div class="row">
+	<?php  $nt_page = get_page_by_title( 'No Thanks' ); ?>
+	<?php  $yp_page = get_page_by_title( 'Yes Please' ); ?>
 
 		<div class="col-md-6">
 			<div class="cta cta--nt cta--half-width">
 				<div class="cta-inner clearfix">
 					<h2 class="pull-left">Learn More About ></h2>
-					<span class='btn btn-nt pull-right'>No Thanks</span>
+					<a class='btn btn-nt pull-right' href="<?php echo get_permalink($nt_page->ID); ?>">No Thanks</a>
 				</div>
 			</div>
 		</div>
@@ -82,7 +84,7 @@ get_header(); ?>
 			<div class="cta cta--yp cta--half-width">
 				<div class="cta-inner clearfix">
 					<h2 class="pull-left">Learn More About ></h2>
-					<span class='btn btn-yp pull-right'>Yes Please</span>
+					<a class='btn btn-yp pull-right' href="<?php echo get_permalink($yp_page->ID); ?>">Yes Please</a>
 				</div>
 			</div>
 		</div>
